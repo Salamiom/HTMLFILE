@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script src="hello.js">
+    
+   </script> 
+   <h1 style="color:green;">
+	GeeksforGeeks
+</h1>
+<p id="demo2">sourceObject = {a:1, b:2, c:3};</p>
+<button onClick="fun()">click
+</button>
+<p id="demo"></p>
+<script>
+	function fun(){
+	const sourceObject = {a:1, b:2, c:3};
+	let tO = {};
+	tO = JSON.parse(JSON.stringify(sourceObject));
+	document.getElementById("demo").innerHTML =
+	"targetObject a = "+tO.a+", b = " + tO.b+", c = "+tO.c;
+	}
+</script>
+
+</body>
+</html>

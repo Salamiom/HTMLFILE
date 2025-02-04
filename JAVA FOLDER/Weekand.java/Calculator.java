@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Calculator 
+{
+public static void main(String args[])
+{
+Scanner scan = new Scanner(System.in);
+System.out.println("enter any operator");
+char opr  = scan.next().charAt(0);
+
+System.out.println("enter 1st no.");
+int a  = scan.nextInt();
+
+System.out.println("enter 2nd no.");
+int b  = scan.nextInt();
+switch(opr)
+{
+case '+':
+System.out.println("the addition is "+(a+b));
+break;
+case '-':
+System.out.println("the sub is "+(a-b));
+break;
+case '*':
+System.out.println("the mul is "+(a*b));
+break;
+case '/':
+System.out.println("the div is "+(a/b));
+break;
+default:
+System.out.println("invalid option");
+}}}
